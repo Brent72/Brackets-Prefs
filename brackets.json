@@ -1,0 +1,198 @@
+{
+    "fonts.fontSize": "13px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "tjeffree.extensionhighlighter.checked": false,
+    "brackets-git.stripWhitespaceFromCommits": true,
+    "brackets-git.addEndlineToTheEndOfFile": true,
+    "brackets-git.removeByteOrderMark": false,
+    "brackets-git.normalizeLineEndings": false,
+    "brackets-git.useGitGutter": true,
+    "brackets-git.markModifiedInTree": true,
+    "brackets-git.showBashButton": true,
+    "brackets-git.useCodeInspection": true,
+    "brackets-git.useGitFtp": false,
+    "brackets-git.useVerboseDiff": false,
+    "brackets-git.useDifftool": false,
+    "brackets-git.showTerminalIcon": false,
+    "brackets-git.clearWhitespaceOnSave": false,
+    "brackets-git.avatarType": "AVATAR_COLOR",
+    "brackets-git.dateMode": 1,
+    "brackets-git.dateFormat": null,
+    "brackets-git.enableAdvancedFeatures": false,
+    "brackets-git.panelShortcut": "Ctrl-Alt-G",
+    "brackets-git.commitCurrentShortcut": "Ctrl-Alt-C",
+    "brackets-git.commitAllShortcut": null,
+    "brackets-git.bashShortcut": null,
+    "brackets-git.pushShortcut": null,
+    "brackets-git.pullShortcut": null,
+    "brackets-git.gotoPrevChangeShortcut": null,
+    "brackets-git.gotoNextChangeShortcut": null,
+    "brackets-git.refreshShortcut": null,
+    "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe",
+    "brackets-git.gitTimeout": 30,
+    "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe",
+    "brackets-git.terminalCommandArgs": "--cd=$1",
+    "brackets-git.debugMode": false,
+    "noDistractions": false,
+    "themes.theme": "dark-theme",
+    "linting.collapsed": true,
+    "edc.brackets-snippets.hints": [
+        {
+            "trigger": "cl",
+            "scope": "javascript",
+            "description": "console.log",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.log(${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "cll",
+            "scope": "javascript",
+            "description": "console.log",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.log('${1:obj}:', ${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "cdd",
+            "scope": "javascript",
+            "description": "console.dir",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.dir('${1:obj}:', ${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "rc",
+            "scope": "javascript",
+            "description": "document.removeChild",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:document}.removeChild(${2:elem});${3}",
+            "source": "system"
+        },
+        {
+            "trigger": "qsa",
+            "scope": "javascript",
+            "description": "document.querySelectorAll",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:document}.querySelectorAll('${2:selector}');${3}",
+            "source": "system"
+        },
+        {
+            "trigger": "fe",
+            "scope": "javascript",
+            "description": "forEach",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:myArray}.forEach(function (${2:elem}) {\n  ${3}\n});",
+            "source": "system"
+        },
+        {
+            "trigger": "fi",
+            "scope": "javascript",
+            "description": "for in",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "for (${1:prop} in ${2:obj}) {\n  if (${2:obj}.hasOwnProperty(${1:prop})) {\n    ${3}\n  }\n}",
+            "source": "system"
+        },
+        {
+            "trigger": "fn",
+            "scope": "javascript",
+            "description": "function",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "function ${1:methodName} (${2:arguments}) {\n  ${3}\n}",
+            "source": "system"
+        },
+        {
+            "trigger": "afn",
+            "scope": "javascript",
+            "description": "anonymous function",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "function (${1:arguments}) {\n  ${2}\n}",
+            "source": "system"
+        },
+        {
+            "trigger": "sw",
+            "scope": "javascript",
+            "description": "switch statement",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "switch(${1:expression}) {\n  case ${2:value}:\n    ${3}\n    break;\n  default:\n    break;\n}",
+            "source": "system"
+        },
+        {
+            "trigger": "si",
+            "scope": "javascript",
+            "description": "setInterval",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "setInterval(function() {\n  ${2}\n}, ${1:delay});",
+            "source": "system"
+        },
+        {
+            "trigger": "st",
+            "scope": "javascript",
+            "description": "setTimeout",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "setTimeout(function() {\n  ${2}\n}, ${1:delay});",
+            "source": "system"
+        },
+        {
+            "text": "while($row = $result->fetch_assoc()){\n\n}",
+            "trigger": "whi",
+            "description": "while loop with fetch asooc",
+            "scope": "php",
+            "mTime": 1473861264381
+        },
+        {
+            "text": "$row = $result->fetch_row();",
+            "trigger": "fet",
+            "description": "fetch row",
+            "scope": "php",
+            "mTime": 1473861293023
+        },
+        {
+            "scope": "php",
+            "description": "mysqli connect",
+            "text": "$mysqli = new mysqli($dbhost,$dbuser,$dbpass,$dbname);\nif ($mysqli->connect_error) {trigger_error('Database connection failed: ' . $mysqli->connect_error, E_USER_ERROR);}",
+            "trigger": "mysq",
+            "mTime": 1473861298318
+        },
+        {
+            "text": "$rowcount = mysqli_num_rows($result);",
+            "trigger": "num",
+            "description": "mysqli num rows",
+            "scope": "php",
+            "mTime": 1473861303510
+        },
+        {
+            "text": "$result = $mysqli->query($sql);\nif($result === false) {trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $mysqli->error, E_USER_ERROR);}",
+            "trigger": "res",
+            "description": "mysqli query",
+            "scope": "php",
+            "mTime": 1473861310274
+        },
+        {
+            "text": "$sql = 'SELECT fields FROM table WHERE condition';",
+            "trigger": "sel",
+            "description": "mysql SELECT",
+            "scope": "php",
+            "mTime": 1473861317047
+        },
+        {
+            "trigger": "fn",
+            "description": "php function",
+            "scope": "php",
+            "text": "function ($${1:arguments}) {\n  ${2}\n}",
+            "mTime": 1473861466233
+        }
+    ]
+}
